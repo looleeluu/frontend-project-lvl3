@@ -1,19 +1,17 @@
-install: install-deps
+develop:
+	npx webpack serve
 
-install-deps:
+install:
 	npm ci
 
-publish:
-	npm publish --dry-run
-
-lint:
-	npx eslint .
-
-link:
-	npm link
+build:
+	rm -rf dist
+	NODE_ENV=production npx webpack
 
 test:
 	npm test
 
-test-coverage:
-	npm test -- --coverage --coverageProvider=v8
+lint:
+	npx eslint .
+
+.PHONY: test
