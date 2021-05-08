@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import _ from 'lodash';
 
 const makeField = () => {
   const container = document.createElement('div');
