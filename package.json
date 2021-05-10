@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "npx -n --experimental-vm-modules jest",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
