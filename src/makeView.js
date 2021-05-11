@@ -62,7 +62,7 @@ const makeHeader = () => {
   const divFeedback = document.createElement('div');
 
   h1El.classList.add('display-3');
-  h1El.textContent = 'RSS Агрегатор';
+  h1El.textContent = 'RSS агрегатор';
 
   pEl.classList.add('lead');
   pEl.textContent = 'Начните читать сегодня! Это легко, это красиво.';
@@ -115,5 +115,7 @@ export default () => {
   footer.classList.add('footer', 'border-top', 'py-3', 'mt-5');
   main.append(headerSection, fieldSection);
   footer.append(makeFooter());
+
+  document.body.classList.add('d-flex', 'flex-column', 'min-vh-100');
   document.body.append(main, footer);
 };
