@@ -85,10 +85,10 @@ const makeFooter = () => {
   const textContainer = document.createElement('div');
   const aEl = document.createElement('a');
 
-  aEl.href = 'https://ru.hexlet.io/';
+  aEl.href = 'https://github.com/looleeluu/frontend-project-lvl3';
   aEl.target = '_blank';
   aEl.classList.add('text-decoration-none');
-  aEl.textContent = 'Hexlet';
+  aEl.textContent = 'Ilya Sinegubkin';
 
   textContainer.classList.add('text-center');
   textContainer.textContent = 'created by ';
